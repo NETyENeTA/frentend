@@ -11,14 +11,20 @@ main {
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Terminator Cyr';
+    src: url("terminatorcyr_semi_expandedbold.ttf") format('truetype'),
+        url('terminatorcyr_semi_expandedbold.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 .bell-btn {
     width: 20px;
     height: 20px;
 }
 
-.card:hover {
-    border: 2px dashed var(--grey);
-}
 
 :root {
     --bg-color-dark: #242731;
@@ -34,6 +40,13 @@ main {
     --grey-plate: #191C25;
 }
 
+
+
+a {
+
+    text-decoration: none;
+}
+
 body {
     background-color: var(--blue);
 }
@@ -46,7 +59,123 @@ body {
     color: white;
     align-items: center;
     transition: background-color 0.3s ease, border-color 0.3s ease;
+    
+position: fixed;
+top: 0;
+width: 96%;
+z-index: 1000;
+
+    & p {
+        margin: 0;
+        font-size: 16px;    
+        font-weight: 600;
+    }
+
 }
+
+.span-logo {
+    font-size: 30px;
+}
+
+
+/* .header {
+    background-color: var(--blue);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+
+    & p {
+        margin: 0;
+    }
+} */
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: var(--grey-plate);
+    border-radius: 9px;
+    padding: 8px 15px;
+    width: 600px;
+    border: 1px solid #3e3e3e;
+}
+
+.search-box img {
+    color: var(--text-color-light-dark);
+    margin-right: 10px;
+    width: 13px;
+    height: 13px;
+}
+
+.search-box input {
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--search-text-dark);
+    font-size: 1em;
+    flex-shrink: 0;
+}
+
+.search-box input::placeholder {
+    color: var(--text-color-light-dark);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    color: var(--text-color-light-dark);
+}
+
+.user-info i {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 20px;
+    object-fit: cover;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    font-size: 0.9em;
+}
+
+.user-name {
+    font-weight: bold;
+    color: var(--text-color-dark);
+}
+
+.user-role {
+    color: var(--text-color-light-dark);
+}
+
+.large-letter {
+    font-size: 26px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo p {
+    font-family: 'Terminator Cyr', sans-serif;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+
+}
+
 
 .search-box {
     display: flex;
@@ -153,7 +282,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+    margin: 100px 0 20px 0;
+    z-index: 1000;
 }
 
 .menu-button {
@@ -210,11 +340,14 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 5px;
+    gap: 25px;
 }
 
 .card {
     position: relative;
+
+    transition: all 0.4s;
+    border: 2px solid transparent;
 
     display: flex;
     flex-direction: column;
@@ -225,9 +358,11 @@ body {
     border-radius: 15px;
 
     width: 350px;
-    height: 200px;
+    height: 180px;
 
-    padding: 31px 30px 8px 16px;
+    padding: 15px 30px 8px 16px;
+
+    border-width: 5px;
 
     & h2,
     h3,
@@ -235,11 +370,12 @@ body {
 
         margin: 0;
         color: white;
-        font-weight: 300;
+        font-weight: 100;
     }
 
     & h2 {
         font-size: 18px;
+        font-weight: 200;
     }
 
     & h3 {
@@ -258,7 +394,7 @@ body {
     & img {
         position: absolute;
         right: 10px;
-        bottom: 24px;
+        bottom: 14px;
 
         width: 120px;
         height: 120px;
@@ -269,6 +405,10 @@ body {
 
         display: flex;
         gap: 5px;
+    }
+
+    &:hover {
+        border: 2px solid var(--grey);
     }
 }
 

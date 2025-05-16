@@ -41,6 +41,10 @@ body {
     justify-content: space-between;
     align-items: center;
     transition: background-color 0.3s ease, border-color 0.3s ease;
+
+    & p {
+        margin: 0;
+    }
 }
 
 .search-box {

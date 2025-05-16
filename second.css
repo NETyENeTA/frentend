@@ -169,6 +169,7 @@ main {
 
 .logo p {
     font-family: 'Terminator Cyr', sans-serif;
+        margin: 0;
 }
 
 .logo img {

@@ -1,114 +1,201 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bHunters Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cards.css">
+    <title>Document</title>
 </head>
+
 <body>
+
     <header class="header">
-        <div class="header-left">
-            <div class="logo">
-                <img src="https://ccodecoder.simdif.com/images/public/sd_6825a71e8b47d.png?no_cache=1747305299" alt="" width="120" height="40">
-            </div>
-            <div class="search-bar">
-                <i class="fas fa-magnifying-glass"></i>
-                <input type="text" placeholder="Поиск...">
-            </div>
+        <div class="logo">
+            <img src="./img/Group 33299.png" alt="">
+            <p>b<span class="span-logo">H</span>UNTERS</p>
         </div>
-        <div class="header-right">
-            <i class="fas fa-bell notification-icon"></i>
-            <div class="user-info">
-                <i class="fas fa-user-circle avatar-icon"></i>
-                <div>
-                    <div class="user-name">Ben verber</div>
-                    <div class="user-role">Участник</div>
-                </div>
+        <div class="search-box">
+            <img src="./img/Vector.png">
+            <input type="text" placeholder="Поиск...">
+        </div>
+        <div class="user-info">
+            <div class="theme-toggle">
+
+                <label for="theme-switch" class="theme-switch__label">
+                    <span></span>
+                </label>
             </div>
-            <button id="theme-toggle" class="theme-toggle">
-                <i class="fas fa-sun"></i>
-            </button>
+            <img class="bell-btn" src="./img/Icon.png">
+            <img src="./img/Ellipse 198.png" alt="User Avatar" class="user-avatar">
+            <div class="user-details">
+                <span class="user-name">Ben verber</span>
+                <span class="user-role">Admin</span>
+            </div>
         </div>
     </header>
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="#"><i class="fas fa-house"></i> Главная</a></li>
-            <li><a href="#"><i class="fas fa-pen-to-square"></i> Создать тест</a></li>
-            <li class="v"><a href="#"><i class="fas fa-folder"></i> Мои тесты</a></li>
-        </ul>
-    </nav>
+    <main>
 
-    <main class="container">
-        <div class="card">
-            <div class="card-content">
-                <img src="https://ccodecoder.simdif.com/images/th/sd_6825abf605315.png?no_cache=1747306523" alt="" width="375"
-                height="180">
-            </div>
-            <div class="card-illustration">
-            </div>
+        <div class="central-block">
+            <section class="pages">
+                <div class="menu-button-test button-page-here">
+                    <a href="#">
+                        <img src="./img/Frame 1073714481.png" alt="">
+                        <button id="button-page-here" class="button-page">Главная</button>
+                    </a>
+                </div>
+                <div class="menu-button-test">
+                    <a href="./testpage.html">
+                        <img src="./img/system-uicons_create.png" alt="">
+                        <button class="button-page">Создать тест</button>
+                    </a>
+                </div>
+                <div class="menu-button-test">
+                    <a href="./cards.html">
+                        <img src="./img/mage_folder-2.png" alt="">
+                        <button class="button-page">Мои тесты</button>
+                    </a>
+                </div>
+            </section>
         </div>
 
-        <div class="card">
-            <div class="card-content">
-            </div>
-            <div class="card-illustration">
-            </div>
-        </div>
+        <section class="cards">
 
-        <div class="card">
-            <div class="card-content">
-            </div>
-            <div class="card-illustration">
-            </div>
-        </div>
+            <article class="card">
+                <h2>Эффективные алгоритмы сортировки</h2>
+                <h3 class="border">Программирование</h3>
+                <div>
+                    <p>Дедлайн:</p>
+                    <h4>23.05.2025</h4>
+                </div>
+                <div>
+                    <p>Вопросов</p>
+                    <h4>12</h4>
+                </div>
+                <img src="assets/images/img1.png" alt="">
+            </article>
 
-        <div class="card">
-            <div class="card-content">
-            </div>
-            <div class="card-illustration">
-            </div>
-        </div>
+            <article class="card">
+                <h2>Цветовая палитра и психология цвета</h2>
+                <h3>Дизайн</h3>
+                <div>
+                    <p>Дедлайн:</p>
+                    <h4>20.05.2025</h4>
+                </div>
+                <div>
+                    <p>Вопросов</p>
+                    <h4>18</h4>
+                </div>
+                <img src="assets/images/img2.png" alt="">
+            </article>
 
-         <div class="card">
-            <div class="card-content">
-            </div>
-            <div class="card-illustration">
-            </div>
-        </div>
+            <article class="card">
+                <h2>Современные инструменты</h2>
+                <h3>Дизайн</h3>
+                <div>
+                    <p>Дедлайн:</p>
+                    <h4>28.05.2025</h4>
+                </div>
+                <div>
+                    <p>Вопросов</p>
+                    <h4>19</h4>
+                </div>
+                <img src="assets/images/img3.png" alt="">
+            </article>
 
-        <div class="card">
-            <div class="card-content">
-            </div>
-            <div class="card-illustration">
-            </div>
-        </div>
+            <article class="card">
+                <h2>Передача эмоций через графику</h2>
+                <h3 class="border">Дизайн</h3>
+                <div>
+                    <p>Дедлайн:</p>
+                    <h4>24.05.2025</h4>
+                </div>
+                <div>
+                    <p>Вопросов</p>
+                    <h4>16</h4>
+                </div>
+                <img src="assets/images/img4.png" alt="">
+            </article>
 
-         <div class="card">
-            <div class="card-content">
-            </div>
-            <div class="card-illustration">
-            </div>
-        </div>
+            <article class="card">
+                <h2>Применение паттернов проектирования</h2>
+                <h3>Программирование</h3>
+                <div>
+                    <p>Дедлайн:</p>
+                    <h4>26.05.2025</h4>
+                </div>
+                <div>
+                    <p>Вопросов</p>
+                    <h4>22</h4>
+                </div>
+                <img src="assets/images/img5.png" alt="">
+            </article>
 
-        <div class="card">
-            <div class="card-content">
-            </div>
-            <div class="card-illustration">
-            </div>
-        </div>
 
-         <div class="card">
-            <div class="card-content">
-            </div>
-            <div class="card-illustration">
-            </div>
-        </div>
+            <article class="card">
+                <h2>Test-driven development (TDD)</h2>
+                <h3>Программирование</h3>
+                <div>
+                    <p>Дедлайн:</p>
+                    <h4>29.05.2025</h4>
+                </div>
+                <div>
+                    <p>Вопросов</p>
+                    <h4>17</h4>
+                </div>
+                <img src="assets/images/img6.png" alt="">
+            </article>
+
+
+            <article class="card">
+                <h2>Объем и тени в цифровой графике</h2>
+                <h3 class="border">Программирование</h3>
+                <div>
+                    <p>Дедлайн:</p>
+                    <h4>25.05.2025</h4>
+                </div>
+                <div>
+                    <p>Вопросов</p>
+                    <h4>7</h4>
+                </div>
+                <img src="assets/images/img7.png" alt="">
+            </article>
+
+            <article class="card">
+                <h2>Интерфейсы мобильных приложений</h2>
+                <h3>Дизайн</h3>
+                <div>
+                    <p>Дедлайн:</p>
+                    <h4>27.05.2025</h4>
+                </div>
+                <div>
+                    <p>Вопросов</p>
+                    <h4>9</h4>
+                </div>
+                <img src="assets/images/img8.png" alt="">
+            </article>
+
+            <article class="card">
+                <h2> Эффективные алгоритмы сортировки</h2>
+                <h3>Программирование</h3>
+                <div>
+                    <p>Дедлайн:</p>
+                    <h4>01.06.2025</h4>
+                </div>
+                <div>
+                    <p>Вопросов</p>
+                    <h4>11</h4>
+                </div>
+                <img src="assets/images/img9.png" alt="">
+            </article>
+
+        </section>
+
+
+
     </main>
 
-    <script src="main.js"></script>
 </body>
+
 </html>
