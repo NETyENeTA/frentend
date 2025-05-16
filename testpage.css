@@ -32,6 +32,8 @@ body {
     background-color: var(--blue);
     color: var(--text-color-dark);
     transition: background-color 0.3s ease, color 0.3s ease;
+
+    min-width: 800px;
 }
 
 .header {
@@ -314,4 +316,37 @@ body {
 
 #check-answer:hover{
     background-color: #3f67dd;
+}
+
+@media (max-width:900px) {
+    
+.add-new-text{
+
+    width: 410px;
+
+    }
+
+
+
+.add-new-question-btn{
+
+    width: 420px;
+
+}
+
+.add-variant-answer{
+
+    width: 420px;
+
+}
+
+    .search-box {
+        display: none;
+    }
+
+    .header {
+        align-items: center;
+    }
+
+
 }

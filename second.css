@@ -30,6 +30,8 @@ body {
     background-color: var(--blue);
     color: var(--text-color-dark);
     transition: background-color 0.3s ease, color 0.3s ease;
+
+    min-width: 1100px;
 }
 
 main {
@@ -425,4 +427,26 @@ main {
 .bell-btn{
     width: 20px;
     height: 20px;
+}
+
+@media (max-width:768px) {
+
+.header {
+    max-width: 880px;
+    top: 20px;
+}
+
+    .search-box {
+
+
+        display: none;
+        /* position: absolute; */
+
+
+    }
+
+    /* .all-blocks {
+        padding-left: 0;
+    } */
+    
 }
